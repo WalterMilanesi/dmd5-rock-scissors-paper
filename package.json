@@ -1,0 +1,15 @@
+{
+  "name": "10-md5-rock-scissors-paper",
+  "version": "1.0.0",
+  "license": "MIT",
+  "scripts": {
+    "dev":"parcel src/index.html",
+    "build": "parcel build ./src/index.html --dist-dir build --public-url /dmd5-rock-scissors-paper",
+    "deploy": "gh-pages -d build",
+    "build-and-deploy": "npm run build && npm run deploy"
+  },
+  "dependencies": {
+    "gh-pages": "^4.0.0",
+    "parcel": "^2.8.0"
+  }
+}
